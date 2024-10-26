@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="styles/stylesLogin_Cadastro.css"/>
+    <link rel="shortcut icon" href="imgs/logo_favicon.ico" type="image/x-icon">
+  </head>
+  <body>
+    <main>
+        <img class="img_login" src="imgs/logo_footer.png" alt="">
+        <section class="container_login">
+            <h1>Login</h1>
+            <form method
+            ="post" action="validar.jsp">
+            <label for="matriculaFuncionario" class="align_left">Matrícula</label>
+            <input id="matriculaFuncionario" class="align-center" type="text" name="matriculaFuncionario">
+
+            <label for="senhaFuncionario">Senha</label>
+            <input id="senhaFuncionario" type="password" name="senhaFuncionario">
+
+            <input type="submit" value="Entrar" class="button_login">
+            
+        </form>
+        <a href="cadastroFuncionarios.html">Não tem uma conta? Cadastre-se</a>
+        </section>
+    </main>
+  </body>
+</html>
