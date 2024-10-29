@@ -1,35 +1,54 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cadastre-se</title>
-    <link rel="stylesheet" href="styles/stylesLogin_Cadastro.css" />
-    <link rel="shortcut icon" href="imgs/logo_favicon.ico" type="image/x-icon">
-  </head>
-  <body>
-    <main>
-        <img class="img_login" src="imgs/logo_footer.png" alt="">
-        <section class="container_login">
-            <h1>Cadastro</h1>
-            <form method
-            ="post" action="salvar">
-            <label for="">Primeiro nome</label>
-            <input type="text">
-            <label for="">Sobrenome</label>
-            <input type="text">
-            <label for="">E-mail</label>
-            <input type="email">
-            <label for="">Senha</label>
-            <input type="text">
-            <label for="">Telefone</label>
-            <input type="tel">
 
-            <input type="submit" value="Cadastrar" class="button_login">
-            
-        </form>
-        <a href="loginFuncionarios.html">Já tem uma conta? Faça seu login</a>
-        </section>
-    </main>
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="auth.css">
+    <!--auth.css – Abreviação de autenticação, abrange tanto login quanto cadastro.-->
+    <script> // js para verificar o email antes de mandar para o BD
+        function validarForm() { //essa função verifica se o email é valido
+            var val = document.getElementById("valido");
+            try {
+                var y = document.forms["meuForm"]["email"].value;
+                var atpos = y.indexOf("@");
+                var dotpos = y.lastIndexOf(".");
+                if (atpos < 1 || dotpos < atpos + 2 || dotpos + 2 >= y.length) {
+                    throw "Digite um e-mail válido!";
+                }
+                return true;
+            } catch (err) {
+                val.style.color = "#FF0000";
+                val.innerHTML = "Erro: " + err;
+                return false;
+            } // fim do catch
+        } //fim da função
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="cadastro">
+            <h1>Cadastro</h1>
+            <form method="post" action="" name="meuForm" onsubmit="return validarForm();">
+                <!--chama a função--><!-- TENHO Q colocar a action, para onde o dados do form serao enviados-->
+                <div class="grupo">
+                    <label for="nome">Nome Completo</label> <br>
+                    <input type="text" name="nome" placeholder="Digite o nome completo" maxlength="70" class="input-espaco" required>
+                    <label for="email">E-mail </label> <br>
+                    <input type="text" name="email" placeholder="Digite o e-mail" maxlength="50" class="input-espaco" required>
+                    <label for="senha">Senha </label> <br>
+                    <input type="password" name="senha" placeholder="Digite a senha" maxlength="20" class="input-espaco" required>
+                    </p>
+                </div>
+                <input class="botao" type="submit" value="Enviar">
+
+            </form>
+            <p>Já tem uma conta? <a href="login.html">Faça Login</a></p>
+            <p id="valido">Preencha o formulário e clique em enviar</p>
+        </div>
+    </div>
+</body>
+
 </html>

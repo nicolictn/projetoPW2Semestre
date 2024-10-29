@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    background-color: var(--cor-primaria);
+}
+
+.container {
+    width: 100%;
+    margin-top: 200px;
+    max-width: 650px;
+    /*largura maximaaaaaaaaaaaa*/
+    padding: 30px 80px;
+    /*espaçamento interno de elementos*/
+    background-color: #ffffff;
+    border-radius: 10px;
+    /*arrendodar as bordas*/
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 40px;
+    /*margem inferior do form*/
+    color: var(--cor-primaria);
+}
+
+.grupo {
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.grupo label {
+    font-size: 18px;
+    color: #561496;
+
+}
+
+.grupo input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--cor-secundaria);
+    border-radius: 5px;
+    font-size: 16px;
+    color: var(--cor-primaria);
+    /*cor da letra na caixa*/
+}
+
+.input-espaco {
+    margin-bottom: 20px;
+}
+
+.botao {
+    width: 100%;
+    /*largura*/
+    padding: 10px;
+    /*espaço interno*/
+    background-color: var(--cor-secundaria);
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
+    font-size: 16px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    /*maozinha no cursor*/
+}
+
+.botao:hover {
+    background-color: var(--cor-primaria);
+}
+
+p {
+    text-align: center;
+    margin-top: 15px;
+    color: var(--cor-secundaria);
+}
+
+p a {
+    color: var(--cor-primaria);
+    text-decoration: none;
+
+}
+
+p a:hover {
+    text-decoration: underline;
+}
