@@ -1,0 +1,132 @@
+
+/*GERAL*/
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+/*MAIN*/
+main {
+    /* border: 1px solid red; */
+    /* width: 90%;
+    margin: 0 auto;
+    height: 100%; */
+}
+
+
+/*SEARCH EVENTOS*/
+.container_section_search_events {
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    text-align: center;
+    width: 70%;
+    margin-bottom: 88px;
+}
+
+.container_section_search_events h1 {
+    font-size: 64px;
+    color: var(--cor-secundaria);
+    font-weight: 700;
+}
+
+.container_search_event {
+    display: inline;
+}
+
+.container_search_event input {
+    background-color: rgba(128, 128, 128, 0.377);
+    padding: 16px;
+    width: 400px;
+    height: 30px;
+    border: none;
+    border-radius: 8px;
+    color: black;
+}
+
+.container_search_event img {
+    position: relative;
+    top: 8px;
+    left: 12px;
+    width: 25px;
+}
+
+/*SECTIONS EVENTOS*/
+.container_events {
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.container_events h2 {
+    padding: 8px;
+    background-color: var(--cor-primaria);
+    width: 18%;
+    border-radius: 8px;
+    color: white;
+}
+
+.events {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 0 auto;
+
+}
+
+.div_events {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+/* .div_img_events:hover {
+    zoom: 2px;
+    transition: 2s;
+} */
+
+.imgs_events {
+    border-radius: 32px;
+    border: 8px solid #3a1e9484;
+}
+
+.img_logo_aviso {
+    position: relative;
+    left: 110px;
+    width: 10px;
+}
+
+.img_logo_aviso img {
+    width: 20px;
+}
+
+.div_events h3 {
+    font-weight: 800;
+}
+
+.div_events p {
+    margin-bottom: 32px;
+}
+
+.events_button_comprar button {
+    font-size: 18px;
+    padding: 8px;
+    font-weight: 700;
+    border-radius: 16px;
+    color: rgb(0, 0, 0);
+    background-color: rgba(172, 255, 47, 0.54);
+    border: none;
+}
+
+/* .carrossel_button {
+    position: static;
+    left: 80x;
+} */
+

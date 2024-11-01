@@ -1,0 +1,7 @@
+html, body, span, p, form, img, a, ul, ol, li, table, tr, td, div{
+    margin: 0;
+    padding: 0; 
+    border:none; 
+    outline:none;
+    list-style-type:none;
+ }

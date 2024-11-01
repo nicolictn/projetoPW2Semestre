@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Ajuda</title>
+    <link rel="stylesheet" href="/styles/styleForms.css">
+    <!--IBRAIM-->
+</head>
+<body>
+
+<div class="container">
+    <h1>PRECISA DE AJUDA?</h1>
+
+    <label>Enviar uma solicitação</label>
+    <p>Selecione um formulário abaixo:</p>
+    <select>
+        <option value="contato">Formulário para contato</option>
+        <option value="suporte">Formulário para suporte</option>
+        <option value="reclamacao">Formulário para reclamação</option>
+        <option value="feedback">Formulário para feedback</option>
+    </select>
+
+    <label>Endereço de e-mail</label>
+    <input type="email" placeholder="Digite seu e-mail">
+
+    <label>Descreva sua solicitação</label>
+    <textarea rows="8" placeholder="Descreva sua questão"></textarea>
+
+    <label>Anexos (Opcional)</label>
+    <br>
+    <input type="file" multiple>
+
+    <button type="submit">Enviar</button>
+</div>
+
+</body>
+</html>

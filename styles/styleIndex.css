@@ -1,0 +1,120 @@
+/*geral*/
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+/*NAV*/
+nav {
+    width: 100%;
+    height: 100px;
+    background-color: var(--cor-primaria);
+    display: flex;
+    flex-direction: row;
+    padding: 32px;
+    align-items: center;
+    position: fixed;
+    z-index: 2;
+}
+
+.container_img {
+    display: flex;
+    width: 10%;
+    margin-right: 16px;
+    /* border: 1px solid red; */
+    justify-content: center;
+}
+
+nav img {
+    width: 60px;
+}
+
+.container_nav__a {
+    display: flex;  
+    text-align: center;
+    justify-content: center;
+    padding-left: 16px;
+    width: 70%;
+    margin-right: 16px;
+    /* border: 1px solid red; */
+}
+
+.container_nav__a a {
+    color: white;
+    text-decoration: none;
+    padding: 16px;
+    font-weight: 500;
+}
+
+.container_nav__a a:hover {
+    font-weight: bold;
+}
+
+.container_nav__button_cadastro {
+    display: flex;  
+    text-align: center;
+    justify-content: center;
+    padding-left: 16px;
+    width: 20%;
+    /* border: 1px solid red; */
+}
+
+.container_nav__button_cadastro a {
+    text-decoration: none;
+    background-color: white;
+    color: var(--cor-primaria);
+    border: 0px;
+    padding: 12px;
+    border-radius: 16px;
+}
+
+/*MAIN*/
+.quadroDeConteudo {
+    border: 0px;
+    width: 100%;
+    min-height: 1040px;
+    margin: 32px 0 32px 0;
+    padding-top: calc(8% + 32px);
+    padding-bottom: calc(8% + 24px);
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+iframe {
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+/*FOOTER*/
+footer {
+    width: 100%;
+    background-color: var(--cor-primaria);
+    color: white;
+    display: flex;
+    /* justify-content: center; */
+    flex-direction: row;
+    padding: 28px;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    align-items: center;
+    margin-top: 32px;
+}
+
+footer img {
+    width: 60px;
+}
+
+.container_infos_footer {
+    display: flex;
+    justify-content: center;
+}
+
+.container_infos_footer p {
+    margin-right: 8px;
+}
