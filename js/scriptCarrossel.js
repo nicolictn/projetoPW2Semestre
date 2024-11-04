@@ -1,20 +1,14 @@
-// const imgs = document.getElementById("img");
-// const img = document.querySelectorAll("#img img");
+function direcao(e){
+    var direcao = document.getElementById("contentSlide");
 
+    if(e == 1) {
+        //esquerda
 
-// let idx = 0;
+        direcao.scrollLeft = direcao.scrollLeft - 200;
 
-// function carrossel() {
-//     idx++;
+    } else if(e == 2) {
+        //direita
 
-//     //quando terminar a quarta imagem, o carrossel volta para a imagem inicial (0).
-//     if(idx > img.length - 1) {
-//         idx = 0;
-//     }
-
-//     img.style.transform = `translateX(${-idx * 500}px)`;
-
-// }
-
-// setInterval(carrossel, 1800);
-
+        direcao.scrollLeft = direcao.scrollLeft + 200;
+    }
+}

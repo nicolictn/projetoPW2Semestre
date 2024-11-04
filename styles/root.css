@@ -1,5 +1,9 @@
+/*IMPORTAÇÃO DE FONTES*/
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
 :root {
     /* --font-family-padrao:; */
     --cor-primaria: #391e94;
     --cor-secundaria: #561496;
+    --font-padrao: "Hind Siliguri", sans-serif;
 }

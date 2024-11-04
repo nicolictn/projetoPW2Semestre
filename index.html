@@ -4,18 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>INÍCIO</title>
-    <link rel="stylesheet" href="styles/reset.css">
+    <!-- <link rel="stylesheet" href="styles/reset.css"> -->
     <link rel="stylesheet" href="/styles/root.css">
-    <link rel="stylesheet" href="/styles/styleIndex.css">
+    <link rel="stylesheet" href="/styles/styleHome.css">
+    <!-- <link rel="stylesheet" href="/styles/styleIndex.css"> -->
 </head>
 <body>
-    <nav>
+    <!-- <nav>
         <div class="container_img">
             <img src="imgs/logo.png" alt="">
         </div>
 
         <div class="container_nav__a">
-            <a href="inicio.html" target="conteudo">INÍCIO</a>
+            <a href="index.html" target="conteudo">INÍCIO</a>
             <a href="eventos.html" target="conteudo">EVENTOS</a>
             <a href="produtosEventos.html" target="conteudo">PRODUTOS</a>
             <a href="sobreNos.html" target="conteudo">SOBRE NÓS</a>
@@ -25,17 +26,122 @@
         <div class="container_nav__button_cadastro">
             <a href="login.html">Entrar/Cadastrar</a>
         </div>
-    </nav>
+    </nav> -->
     <main>
-      <iframe src="eventos.html" frameborder="0" name="conteudo" class="quadroDeConteudo" allow="requestFullscreen()"></iframe>
-    </main>
-    <footer>
+
+        <div class="slider">
+    
+          <div class="slides">
+            <!-- Radio buttons/ botões de opções-->
+            <input type="radio" name="radio-btn" id="radio1" checked>
+            <input type="radio" name="radio-btn" id="radio2">
+            <input type="radio" name="radio-btn" id="radio3">
+            <!-- Fim Radio Buttons -->
+    
+            <!-- Slide imagens -->
+            <div class="slide first">
+              <a href=""><img src="imgs/Evento_BrunoMars.png" alt="brunoMars"></a>
+              <!-- colocar o link da pag de evento do brunin -->
+            </div>
+            <div class="slide">
+              <a href=""><img src="imgs/Evento_Niall.png" alt="niall"></a> <!-- colocar o link da pag de evento do Niall -->
+            </div>
+            <div class="slide">
+              <a href=""><img src="imgs/Evento_Lollapalooza.png" alt="lollapalooza"></a>
+              <!-- colocar o link da pag de evento do lola -->
+            </div>
+            <!-- Fim Slide imagens -->
+    
+            <!-- Navegação automatica -->
+            <div class="navegation-auto">
+              <div class="auto-btn1"></div>
+              <div class="auto-btn2"></div>
+              <div class="auto-btn3"></div>
+            </div>
+    
+          </div>
+        </div>
+    
+        <div class="manual-navegation">
+          <label for="radio1" class="manual-btn"></label>
+          <label for="radio2" class="manual-btn"></label>
+          <label for="radio3" class="manual-btn"></label>
+        </div>
+    
+        </div>
+        <script>
+            let count = 1; //declaramos essa variavel com o valor 1
+      
+            setInterval(function () { //setInterval é uma função de intervalo de tempo
+              nextImage(); //  chama a função a cada 3s para mudar a imagem
+            }, 3000); // muda a cada 3000ms ou seja 3s
+      
+            function nextImage() { // função
+              count++;
+              if (count > 3) { //se o contador chegar na ultima imagem, ele é redefinido para a 1, fazendo com que o slide volte a primeira imagem
+                count = 1;
+              }
+              document.getElementById("radio" + count).checked = true; //acessa o elemento com o id correspondente, e altera seu estado para checked
+            }
+          </script>
+        </main>
+        <h2>Em destaque</h2>
+  <div class="destaque">
+    <div class="eventos">
+      <a href=""><img src="imgs/chappell_Roan.png" alt="chappel" class="img-evento"></a>
+      <!--colocar a pag de evento deles-->
+      <h3>Chappell Roan</h3>
+      <p>Allianz Parque, São Paulo
+        30 de Novembro de 2024</p>
+    </div>
+    <div class="eventos">
+      <a href=""><img src="imgs/Evento_Niall.png" alt="niall" class="img-evento"></a>
+      <!--colocar a pag de evento deles-->
+      <h3>Niall Horan</h3>
+      <p>Farmasi Arena, Rio de Janeiro
+        29 de Setembro de 2024</p>
+    </div>
+    <div class="eventos">
+      <a href=""><img src="imgs/travis_scott.jpg" alt="travis" class="img-evento"></a>
+      <!--colocar a pag de evento deles-->
+      <h3>Travis Scott</h3>
+      <p>Allianz Parque, São Paulo
+        8 de Novembro de 2024</p>
+    </div>
+  </div>
+  <div class="detalhes">
+    <h1>Compre com a Premium Tickets</h1>
+    <p>Conheça as vantagens de comprar com a gente</p>
+  </div>
+
+<!-- agilidade, segurança e metodos de pagamento -->
+  <div class="detalhes-icones">
+    <div class="icones">
+      <div class="circulo"></div>
+      <img src="imgs/icone_agilidade.png" alt="agilidade" width="37" height="37" class="icone" style="top: 6%;">
+      <h3>Agilidade</h3>
+      <p>Nosso processo de compra é simples e rápido. Quando concluir a compra, seu ingresso já estará disponível em seu email</p>
+    </div>
+    <div class="icones">
+      <div class="circulo"></div>
+      <img src="imgs/icone_seguranca.png" alt="segurança" width="25" height="29" class="icone" style="top: 6%;" >
+      <h3>Segurança</h3>
+      <p>Total segurança na compra. Nosso site não armazena dados de cartão e possui certificado de segurança</p>
+    </div>
+    <div class="icones">
+      <div class="circulo"></div>
+      <img src="imgs/icone_pagamento.png" alt="metodo-pagamento" width="32" height="32" class="icone" style="top: 7%;">
+      <h3>Métodos de pagamento</h3>
+      <p>Escolha o método de pagamento, pague com cartão de crédito ou boleto bancário</p>
+    </div>
+  </div>
+    <!-- <footer>
         <div class="container_img">
             <img src="imgs/logo.png" alt="">
         </div>
         <div class="container_infos_footer">
             <p>
-                Todos os direitos reservados a TicketEvents. |
+                Todos os direitos reservados a Premium. |
             </p>
             <p>
                 CNPJ: 0000.0000.0000.-01111 | </p>
@@ -43,6 +149,6 @@
                 Av. Eng. Eusébio Stevaux, 823 - Santo Amaro, São Paulo - SP, 04696-000
             </p>
         </div>
-    </footer>
+    </footer> -->
 </body>
 </html>

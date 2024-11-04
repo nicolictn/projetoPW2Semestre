@@ -5,16 +5,15 @@
 }
 
 body {
-    overflow-x: hidden;
-    overflow-y: hidden;
+    /* overflow-x: hidden; */
 }
 
 /*MAIN*/
 main {
     /* border: 1px solid red; */
-    /* width: 90%;
+    width: 90%;
     margin: 0 auto;
-    height: 100%; */
+    height: 100%;
 }
 
 
@@ -76,6 +75,10 @@ main {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     margin: 0 auto;
+    margin-bottom: 88px;
+    background-color: rgba(231, 152, 15, 0.086);
+    border-radius: 48px;
+    padding: 32px;
 
 }
 
@@ -99,7 +102,8 @@ main {
 
 .img_logo_aviso {
     position: relative;
-    left: 110px;
+    left: 300px;
+    bottom: 8px;
     width: 10px;
 }
 
@@ -125,8 +129,88 @@ main {
     border: none;
 }
 
-/* .carrossel_button {
-    position: static;
-    left: 80x;
-} */
+/*CARROSSEL E BUTTONS*/
+#btn-left {
+    position: absolute;
+    display: flex;
+    top: 560px;
+    left: 16px;
+    height: 80px;
+    width: 50px;
+    border-radius: 32px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    line-height: 80px;
+    background: rgba(220, 211, 211, 0.682);
+    cursor: pointer;
+}
 
+
+#btn-right {
+    position: absolute;
+    display: flex;
+    top: 560px;
+    right: 16px;
+    height: 80px;
+    width: 50px;
+    border-radius: 32px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    line-height: 80px;
+    background: rgba(220, 211, 211, 0.682);
+    cursor: pointer;
+}
+
+#btn-left02 {
+    position: absolute;
+    display: flex;
+    top: 1120px;
+    left: 16px;
+    height: 80px;
+    width: 50px;
+    border-radius: 32px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    line-height: 80px;
+    background: rgba(245, 245, 245, 0.862);
+    cursor: pointer;
+}
+
+
+#btn-right02 {
+    position: absolute;
+    display: flex;
+    top: 1120px;
+    right: 16px;
+    height: 80px;
+    width: 50px;
+    border-radius: 32px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    line-height: 80px;
+    background: whitesmoke;
+    cursor: pointer;
+}
+
+#contentSlide {
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+}
+
+#contentSlide::-webkit-scrollbar{
+    display: none;
+}
+
+#contentSlide #block {
+    position: relative;
+    display: inline-block;
+}

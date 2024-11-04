@@ -1,0 +1,179 @@
+
+*{
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+main:not(.manual-btn):not(.destaque){
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.slider{
+	margin: 0 auto;
+	margin-bottom: 100px;
+	width: 95%; 
+	height: 646px; 
+	overflow: hidden; 
+	position: relative; 
+	border-radius: 25px;
+	
+}
+
+.slides{
+	width: 400%;
+	height: 400px;
+	display: flex; 
+}
+
+.slides input{
+	display: none; 
+}
+
+.slide{
+	width: 25%;
+	position: relative;
+}
+
+.slide img{
+	width: 100%;
+}
+
+.manual-navegation{
+	position: absolute;
+	width: 1280px;
+	margin-top: 467.5px; 
+	justify-content: center;
+}
+
+.manual-btn{
+	border: 2px solid #ffffff;
+	padding: 5px;
+	border-radius: 10px;
+	cursor: pointer;
+	transition: 1s;
+}
+
+.manual-btn:not(:last-child){ 
+	margin-right: 40px;
+	
+}
+
+.manual-btn:hover{
+	background-color: #ffffff;
+}
+
+#radio1:checked ~ .first{
+	margin-left: 0;
+}
+
+#radio2:checked ~ .first{
+	margin-left: -25%;
+}
+
+#radio3:checked ~ .first{
+	margin-left: -50%;
+}
+
+.navegation-auto div{
+	border: 2px solid #ffffff;
+	padding: 5px;
+	border-radius: 10px;
+	cursor: pointer;
+	transition: 1s;
+}
+
+.navegation-auto{
+	position: absolute;
+	width: 100%;
+	margin-top: 600px;
+	display: flex;
+	justify-content: center;
+}
+
+.navegation-auto div:not(:last-child){ 
+	margin-right: 40px;
+}
+
+#radio1:checked ~ .navegation-auto .auto-btn1{ 
+	background-color: #ffffff;
+}
+#radio2:checked ~ .navegation-auto .auto-btn2{ 
+	background-color: #ffffff;
+}
+#radio3:checked ~ .navegation-auto .auto-btn3{ 
+	background-color: #ffffff;
+}
+
+h2{
+	margin: 50px;
+}
+.destaque{
+	/* border: 2px solid red;  */
+	margin: 50px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.eventos{
+	/* border: 2px solid red;  */
+	display: block; 
+	justify-content: space-between;
+	text-align:left;
+}
+
+.eventos p{
+	width: 80%;
+}
+
+.img-evento{
+	width: 346px;
+	height: 229px;
+	border-radius: 28px;
+}
+.detalhes{
+	/* border: 2px solid red;  */
+	margin-top: 112px;
+	display: block;
+	text-align: center;
+	line-height: 10px;
+	margin-bottom: 63px;
+}
+
+.detalhes-icones{
+	 /* border: 2px solid red;  */
+	display: flex;
+	justify-content: space-around;
+}
+
+.icones{
+	position: relative;
+	/* border: 2px solid red;  */
+	display: block;
+	text-align: center;
+	width: 20%;
+	top: 20%;
+}
+
+.circulo{
+	position: absolute;
+	background: #d9d9d9;
+	border-radius: 50%;
+	width: 58px;
+	height: 57px;
+	top: 15%;
+	left: 50%;
+	transform: translate(-50%, -50%); 
+	z-index: -1; 
+}
+
+.icone{
+	position: relative;
+	z-index: 1;
+
+}
