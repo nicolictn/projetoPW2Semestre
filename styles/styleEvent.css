@@ -1,7 +1,7 @@
 
 /*GERAL*/
-* {
-    font-family: Arial, Helvetica, sans-serif;
+*{
+	font-family: var(--font-padrao);
 }
 
 body {
@@ -33,6 +33,7 @@ main {
     font-size: 64px;
     color: var(--cor-secundaria);
     font-weight: 700;
+    /* border: 1px solid red; */
 }
 
 .container_search_event {
@@ -67,10 +68,14 @@ main {
 
 .container_events h2 {
     padding: 8px;
-    background-color: var(--cor-primaria);
+    /* background-color: #993fc5; */
     width: 18%;
     border-radius: 8px;
-    color: white;
+    color: black;
+    margin-left: 32px;
+    font-weight: none;
+    font-size: 34px;
+    /* border: 1px solid red; */
 }
 
 /* .carrossel {
@@ -83,12 +88,11 @@ main {
     grid-template-columns: repeat(3, 1fr);
     margin: 0 auto;
     margin-bottom: 88px;
-    /* background-color: rgba(231, 152, 15, 0.086); */
+    background-color:#EFEAFF ;
     border-radius: 48px;
     padding: 32px;
     display: flex;
     flex-direction: row;
-
 }
 
 .div_events {
@@ -184,8 +188,8 @@ main {
 #btn-left02 {
     position: absolute;
     display: flex;
-    top: 1020px;
-    left: 16px;
+    top: 1040px;
+    left: 32px;
     height: 80px;
     width: 50px;
     border-radius: 32px;
@@ -194,7 +198,7 @@ main {
     justify-content: center;
     z-index: 1;
     line-height: 80px;
-    background: rgba(245, 245, 245, 0.862);
+    background: rgba(220, 211, 211, 0.682);
     cursor: pointer;
 }
 
@@ -202,8 +206,8 @@ main {
 #btn-right02 {
     position: absolute;
     display: flex;
-    top: 1020px;
-    right: 16px;
+    top: 1040px;
+    right: 32px;
     height: 80px;
     width: 50px;
     border-radius: 32px;
@@ -212,7 +216,7 @@ main {
     justify-content: center;
     z-index: 1;
     line-height: 80px;
-    background: whitesmoke;
+    background: rgba(220, 211, 211, 0.682);
     cursor: pointer;
 }
 
