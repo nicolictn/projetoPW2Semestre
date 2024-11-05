@@ -58,6 +58,8 @@ main {
 
 /*SECTIONS EVENTOS*/
 .container_events {
+    /* display: flex;
+    flex-direction: row; */
     width: 90%;
     height: 100%;
     margin: 0 auto;
@@ -71,14 +73,21 @@ main {
     color: white;
 }
 
+/* .carrossel {
+    display: flex;
+    flex-direction: row;
+} */
+
 .events {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     margin: 0 auto;
     margin-bottom: 88px;
-    background-color: rgba(231, 152, 15, 0.086);
+    /* background-color: rgba(231, 152, 15, 0.086); */
     border-radius: 48px;
     padding: 32px;
+    display: flex;
+    flex-direction: row;
 
 }
 
@@ -88,6 +97,11 @@ main {
     justify-content: center;
     text-align: center;
     align-items: center;
+    background-color: #F5F3FC;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 24px;
+    border-radius: 6px;
+    margin-right: 8px;
 }
 
 /* .div_img_events:hover {
@@ -97,12 +111,12 @@ main {
 
 .imgs_events {
     border-radius: 32px;
-    border: 8px solid #3a1e9484;
+    /* border: 8px solid #3a1e9484; */
 }
 
 .img_logo_aviso {
     position: relative;
-    left: 300px;
+    left: 250px;
     bottom: 8px;
     width: 10px;
 }
@@ -121,20 +135,22 @@ main {
 
 .events_button_comprar button {
     font-size: 18px;
-    padding: 8px;
-    font-weight: 700;
-    border-radius: 16px;
-    color: rgb(0, 0, 0);
-    background-color: rgba(172, 255, 47, 0.54);
+    padding: 10px;
+    /* font-weight: 700; */
+    border-radius: 5px;
+    color: white;
+    background-color: #7700B2;
     border: none;
+    color: white;
+    cursor: pointer;
 }
 
 /*CARROSSEL E BUTTONS*/
 #btn-left {
     position: absolute;
     display: flex;
-    top: 560px;
-    left: 16px;
+    top: 400px;
+    left: 32px;
     height: 80px;
     width: 50px;
     border-radius: 32px;
@@ -151,8 +167,8 @@ main {
 #btn-right {
     position: absolute;
     display: flex;
-    top: 560px;
-    right: 16px;
+    top: 400px;
+    right: 32px;
     height: 80px;
     width: 50px;
     border-radius: 32px;
@@ -168,7 +184,7 @@ main {
 #btn-left02 {
     position: absolute;
     display: flex;
-    top: 1120px;
+    top: 1020px;
     left: 16px;
     height: 80px;
     width: 50px;
@@ -186,7 +202,7 @@ main {
 #btn-right02 {
     position: absolute;
     display: flex;
-    top: 1120px;
+    top: 1020px;
     right: 16px;
     height: 80px;
     width: 50px;
