@@ -1,7 +1,7 @@
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  /* background-color: white; */
+*{
+	font-family: var(--font-padrao);
 }
+
 
 /*SEARCH INPUT*/
 .container_section_search_events {
@@ -13,11 +13,11 @@ body {
   text-align: center;
   width: 70%;
   margin-bottom: 88px;
-  margin-top: 160px;
+  margin-top: 10px;
 }
 
 .container_section_search_events h1 {
-  font-size: 64px;
+  font-size: 6.4rem;
   color: var(--cor-secundaria);
   font-weight: 700;
 }

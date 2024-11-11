@@ -14,6 +14,7 @@ main {
     width: 90%;
     margin: 0 auto;
     height: 100%;
+    margin-top: 6.6rem;
 }
 
 
@@ -27,10 +28,11 @@ main {
     text-align: center;
     width: 70%;
     margin-bottom: 88px;
+    margin-top: 1.0rem;
 }
 
 .container_section_search_events h1 {
-    font-size: 64px;
+    font-size: 6.4rem;
     color: var(--cor-secundaria);
     font-weight: 700;
     /* border: 1px solid red; */
@@ -43,10 +45,10 @@ main {
 .container_search_event input {
     background-color: rgba(128, 128, 128, 0.377);
     padding: 16px;
-    width: 400px;
-    height: 30px;
+    width: 40.00rem;
+    height: 3.0rem;
     border: none;
-    border-radius: 8px;
+    border-radius: 8rem;
     color: black;
 }
 
@@ -114,7 +116,7 @@ main {
 } */
 
 .imgs_events {
-    border-radius: 32px;
+    border-radius: 3.2rem;
     /* border: 8px solid #3a1e9484; */
 }
 
@@ -153,29 +155,30 @@ main {
 #btn-left {
     position: absolute;
     display: flex;
-    top: 400px;
-    left: 32px;
-    height: 80px;
+    top: 56.0rem;
+    left: 7.2rem;
+    height: 8.0rem;
     width: 50px;
-    border-radius: 32px;
+    border-radius: 3.2rem;
     text-align: center;
     align-items: center;
     justify-content: center;
     z-index: 1;
-    line-height: 80px;
+    line-height: 8.0rem;
     background: rgba(220, 211, 211, 0.682);
     cursor: pointer;
+    font-size: calc(1px + 1.8rem);
 }
 
 
 #btn-right {
     position: absolute;
     display: flex;
-    top: 400px;
-    right: 32px;
-    height: 80px;
+    top: 56.0rem;
+    right: 7.2rem;
+    height: 8.0rem;
     width: 50px;
-    border-radius: 32px;
+    border-radius: 3.2rem;
     text-align: center;
     align-items: center;
     justify-content: center;
@@ -183,16 +186,17 @@ main {
     line-height: 80px;
     background: rgba(220, 211, 211, 0.682);
     cursor: pointer;
+    font-size: calc(1px + 1.8rem);
 }
 
 #btn-left02 {
     position: absolute;
     display: flex;
-    top: 1040px;
-    left: 32px;
-    height: 80px;
+    top: 120.0rem;
+    left: 7.2rem;
+    height: 8.0rem;
     width: 50px;
-    border-radius: 32px;
+    border-radius: 3.2rem;
     text-align: center;
     align-items: center;
     justify-content: center;
@@ -200,16 +204,18 @@ main {
     line-height: 80px;
     background: rgba(220, 211, 211, 0.682);
     cursor: pointer;
+    font-size: calc(1px + 1.8rem);
 }
 
 
 #btn-right02 {
     position: absolute;
     display: flex;
-    top: 1040px;
-    right: 32px;
-    height: 80px;
+    top: 120.0rem;
+    right: 7.2rem;
+    height: 8.0rem;
     width: 50px;
+    border-radius: 3.2rem;
     border-radius: 32px;
     text-align: center;
     align-items: center;
@@ -218,6 +224,7 @@ main {
     line-height: 80px;
     background: rgba(220, 211, 211, 0.682);
     cursor: pointer;
+    font-size: calc(1px + 1.8rem);
 }
 
 #contentSlide {
@@ -231,6 +238,21 @@ main {
 }
 
 #contentSlide #block {
+    position: relative;
+    display: inline-block;
+}
+
+#contentSlide02 {
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+}
+
+#contentSlide02::-webkit-scrollbar{
+    display: none;
+}
+
+#contentSlide02 #block {
     position: relative;
     display: inline-block;
 }

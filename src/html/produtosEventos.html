@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Produtos</title>
+    <link rel="shortcut icon" href="imgs/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../styles/reset.css" />
+    <link rel="stylesheet" href="../styles/root.css" />
+    <link rel="stylesheet" href="../styles/styleNavFooter.css">
+    <link rel="stylesheet" href="../styles/styleProducts.css" />
+    <link rel="stylesheet" href="../styles/styleContainerDivCarrinho.css">
+    <!-- CARRINHO DE COMPRAS -->
+    <link rel="stylesheet" href="../styles/styleCarrinho.css">
+  </head>
+  <body>
+    <nav>
+      <div class="container_img">
+          <img src="/assets/geral_icons/logo.png" alt="">
+      </div>
+
+      <div class="container_nav__a">
+          <a href="/index.html">INÍCIO</a>
+          <a href="/src/html/eventos.html">EVENTOS</a>
+          <a href="/src/html/produtosEventos.html">PRODUTOS</a>
+          <a href="/src/html/sobreNos.html">SOBRE NÓS</a>
+          <a href="/src/html/contato.html">CONTATO</a>
+      </div>
+        <!-- AQUI ABRE O CARRINHO DE COMPRAS -->
+        <div class="container_nav__icon_shoppingCart">
+          <input type="image" onclick="openShoppingCart()" src="/assets/geral_icons/icon_shoppingCart.png">
+        </div>
+
+        <div class="container_nav__button_cadastro">
+            <a href="login.html">Entrar/Cadastrar</a>
+        </div>
+    </nav>
+    <main>
+      <!-- INÍCIO DO CONTAINER DO CARRINHO DE COMPRAS -->
+        <!-- Div para a janela modal -->
+        <div id="modalContainer">
+         <div id="modalContent">
+          <div class="cart-container">
+      </div>
+
+      <button onclick="closeShoppingCart()" id="idCloseShoppingCart">X</button>
+  </div>
+</div>
+
+<!-- FINAL DO CONTAINER CARRINHO DE COMPRAS -->
+
+<!-- INÍCIO DO CONTEÚDO DA PÁGINA DE PRODUTOS -->
+        <section class="container_section_search_events">
+            <h1>PRODUTOS</h1>
+            <div class="container_search_event">
+              <input
+                type="search"
+                name=""
+                id=""
+                placeholder="Pesquise aqui um produto do seu artista favorito!"
+              />
+              <img src="/assets/geral_icons/icon_search.png" alt="" />
+            </div>
+          </section>
+        <div class="product-grid">
+                <div class="product">
+                  <!-- PRODUTO 01 -->
+                    <img src="" alt="Moletom Travis Scott" id="imgProduct01">
+                    <h2 id="nameProduct01">
+                      <!-- Moletom Travis Scott -->
+                    </h2>
+                    <p id="priceProduct01">
+                      <!-- R$ 71,30 -->
+                    </p>
+                    <!-- TESTE DE ADICIONAR PRODUTO -->
+                    <!-- a função é a mesma para todos (pois indica o produto a ser adicionado), o que diferencia é o parâmetro (ID) -->
+                    <button class="addProduct" onclick="adicionarProdutoNoCarrinho(0)">
+                    Adicionar
+                    </button>
+                    <button class="addProduct">
+                      Ver Produto
+                    </button>
+                </div>
+                
+                <!-- PRODUTO 02 -->
+                <div class="product">
+                    <img src="" alt="Boné Travis Scott" id="imgProduct02">
+                    <h2 id="nameProduct02">
+                      <!-- Boné Travis Scott -->
+                    </h2>
+                    <p id="priceProduct02">
+                      <!-- R$ 123,99 -->
+                    </p>
+                    <button class="addProduct" onclick="adicionarProdutoNoCarrinho(1)">
+                      Adicionar
+                      </button>
+                      <button class="addProduct">
+                        Ver Produto
+                      </button>
+                </div>
+    
+                <div class="product">
+                    <img src="/assets/imgs/imgs_page_products/travis_camiseta.jpg" alt="Camiseta Travis Scott">
+                    <h2>Camiseta Travis Scott</h2>
+                    <p>R$ 160,15</p>
+                    <!-- <button class="addProduct" onclick="adicionarProdutoNoCarrinho()">
+                      Adicionar
+                      </button> -->
+                      <button class="addProduct" onclick="adicionarProdutoNoCarrinho()">
+                        Adicionar
+                        </button>
+                      <button class="addProduct">
+                        Ver Produto
+                      </button>
+                </div>
+    
+                <div class="product">
+                    <img src="/assets/imgs/imgs_page_products/copo_system_of_down.jpg" alt="Copo System of a Down">
+                    <h2>Copo System of a Down</h2>
+                    <p>R$ 63,79</p>
+                    <!-- <button class="addProduct" onclick="adicionarProdutoNoCarrinho()">
+                      Adicionar
+                      </button> -->
+                      <button class="addProduct" onclick="adicionarProdutoNoCarrinho()">
+                        Adicionar
+                        </button>
+                      <button class="addProduct">
+                        Ver Produto
+                      </button>
+                </div>
+    
+                <div class="product">
+                    <img src="/assets/imgs/imgs_page_products/bone_system.jpeg" alt="Boné System of a Down">
+                    <h2>Boné System of a Down</h2>
+                    <p>R$ 110,30</p>
+                    <!-- <button class="addProduct" onclick="adicionarProdutoNoCarrinho()">
+                      Adicionar
+                      </button> -->
+                      <button class="addProduct" onclick="adicionarProdutoNoCarrinho()">
+                        Adicionar
+                        </button>
+                      <button class="addProduct">
+                        Ver Produto
+                      </button>
+                </div>
+    
+                <div class="product">
+                    <img src="/assets/imgs/imgs_page_products/system_camiseta.jpg" alt="Camiseta System of a Down">
+                    <h2>Camiseta System of a Down</h2>
+                    <p>R$ 147,23</p>
+                    <!-- <button class="addProduct" onclick="adicionarProdutoNoCarrinho()">
+                      Adicionar
+                      </button> -->
+                      <button class="addProduct" onclick="adicionarProdutoNoCarrinho()">
+                        Adicionar
+                        </button>
+                      <button class="addProduct">
+                        Ver Produto
+                      </button>
+                </div>
+            </div>
+
+    </main>
+    <footer>
+        <div class="container_img">
+            <img src="/assets/geral_icons/logo.png" alt="">
+        </div>
+        <div class="container_infos_footer">
+            <div class="infos_footer__direitos">
+              <p>
+                  Todos os direitos reservados a Premium. 
+              </p>
+            </div>
+            <div class="infos_footer__cnpj">
+              <p>
+                  CNPJ: 0000.0000.-01111 
+              </p>
+            </div>
+              <div class="infos_footer__endereco">
+                <p>
+                  Av. Eng. Eusébio Stevaux, 823 - Santo Amaro, São Paulo - SP, 04696-000
+                </p>
+              </div>
+        </div>
+      </footer>
+
+      <!-- SCRIPTS -->
+      <script src="../js/openShoppingCart.js"></script>
+      <script src="../js/addAndRemoveItensShoppingCart.js"></script>
+  </body>
+</html>

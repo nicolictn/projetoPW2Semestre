@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
-    <link rel="stylesheet" href="/styles/root.css">
-    <link rel="stylesheet" href="/styles/auth.css"><!--auth.css – Abreviação de autenticação-->
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="/src/styles/root.css">
+    <link rel="stylesheet" href="/src/styles/auth.css">
+    <!--auth.css – Abreviação de autenticação, abrange tanto login quanto cadastro.-->
     <script> // js para verificar o email antes de mandar para o BD
         function validarForm() { //essa função verifica se o email é valido
             var val = document.getElementById("valido");
@@ -28,26 +30,26 @@
 
 <body>
     <div class="container">
-        <div class="login">
-            <h1>Login</h1>
+        <div class="cadastro">
+            <h1>Cadastro</h1>
             <form method="post" action="" name="meuForm" onsubmit="return validarForm();">
                 <!--chama a função--><!-- TENHO Q colocar a action, para onde o dados do form serao enviados-->
                 <div class="grupo">
+                    <label for="nome">Nome Completo</label> <br>
+                    <input type="text" name="nome" placeholder="Digite o nome completo" maxlength="70" class="input-espaco" required>
                     <label for="email">E-mail </label> <br>
-                    <input type="text" name="email" placeholder="Digite o e-mail" maxlength="50" class="input-espaco"
-                        required>
-                    <br>
+                    <input type="text" name="email" placeholder="Digite o e-mail" maxlength="50" class="input-espaco" required>
                     <label for="senha">Senha </label> <br>
-                    <input type="password" name="senha" placeholder="Digite a senha" maxlength="20" class="input-espaco"
-                        required>
+                    <input type="password" name="senha" placeholder="Digite a senha" maxlength="20" class="input-espaco" required>
                     </p>
                 </div>
                 <input class="botao" type="submit" value="Enviar">
 
             </form>
-            <p>Não tem uma conta? <a href="cadastrese.html">Cadastre-se</a></p>
+            <p>Já tem uma conta? <a href="/src/html/login.html">Faça Login</a></p>
             <p id="valido">Preencha o formulário e clique em enviar</p>
         </div>
     </div>
 </body>
+
 </html>

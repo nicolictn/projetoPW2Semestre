@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Ajuda</title>
+    <link rel="stylesheet" href="../styles/reset.css">
+    <link rel="stylesheet" href="../styles/root.css">
+    <link rel="stylesheet" href="../styles/styleNavFooter.css">
+    <link rel="stylesheet" href="../styles/styleForms.css">
+</head>
+<body>
+  <nav class="nav_forms">
+    <div class="container_img">
+        <img src="/assets/geral_icons/logo.png" alt="">
+    </div>
+
+    <div class="container_nav__a">
+        <a href="/index.html">INÍCIO</a>
+        <a href="/src/html/eventos.html">EVENTOS</a>
+        <a href="/src/html/produtosEventos.html">PRODUTOS</a>
+        <a href="/src/html/sobreNos.html">SOBRE NÓS</a>
+        <a href="/src/html/contato.html">CONTATO</a>
+    </div>
+      <!-- AQUI ABRE O CARRINHO DE COMPRAS -->
+      <div class="container_nav__icon_shoppingCart">
+        <input type="image" onclick="openShoppingCart()" src="/assets/geral_icons/icon_shoppingCart.png">
+      </div>
+
+      <div class="container_nav__button_cadastro">
+          <a href="login.html">Entrar/Cadastrar</a>
+      </div>
+  </nav>
+
+<main>
+    <h1>PRECISA DE AJUDA?</h1>
+    <div class="container">
+    
+     <label>Enviar uma solicitação</label>
+        <p>Selecione um formulário abaixo:</p>
+        <select>
+            <option value="contato">Formulário para contato</option>
+            <option value="suporte">Formulário para suporte</option>
+            <option value="reclamacao">Formulário para reclamação</option>
+            <option value="feedback">Formulário para feedback</option>
+        </select>
+    
+        <label>Endereço de e-mail</label>
+        <input type="email" placeholder="Digite seu e-mail">
+    
+        <label>Descreva sua solicitação</label>
+        <textarea rows="8" placeholder="Descreva sua questão"></textarea>
+    
+        <label>Anexos (Opcional)</label>
+        <br>
+        <input type="file" multiple>
+    
+        <button type="submit">Enviar</button>
+    </div>
+</main> 
+
+<footer>
+    <div class="container_img">
+        <img src="imgs/logo.png" alt="">
+    </div>
+    <div class="container_infos_footer">
+        <div class="infos_footer__direitos">
+          <p>
+              Todos os direitos reservados a Premium. 
+          </p>
+        </div>
+        <div class="infos_footer__cnpj">
+          <p>
+              CNPJ: 0000.0000.-01111 
+          </p>
+        </div>
+          <div class="infos_footer__endereco">
+            <p>
+              Av. Eng. Eusébio Stevaux, 823 - Santo Amaro, São Paulo - SP, 04696-000
+            </p>
+          </div>
+    </div>
+  </footer>
+
+</body>
+</html>
