@@ -153,28 +153,3 @@ footer img {
     /* font-size: calc(1px + 1.4rem); */
     flex-wrap: wrap;
 }
-
-/*TENTATIBA DE RESPONSIVIDADE*/
-@media (min-width: 400px) {
-    .infos_footer__direitos, .infos_footer__cnpj, .infos_footer__endereco {
-        /* width: 100%; */
-        font-size: calc(1px + 1.4rem);
-    }
-  }
-
-@media (max-width: 400px) {
-    footer img {
-        width: 4rem;
-    }
-        
-    nav img {
-        width: 4.5rem;
-    }
-}
-
-@media (max-width: 806px) {
-    .container_nav__a a{
-        font-size: calc(1px + 1.2rem);
-        /* border: 1px solid red; */
-    }
-}

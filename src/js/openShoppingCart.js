@@ -6,6 +6,7 @@ function openShoppingCart() {
 
   // Exibe a div modal
   document.getElementById("modalContainer").style.display = "block";
+  document.getElementById("idCloseShoppingCart").style.display = "block";
 }
 
 function closeShoppingCart() {

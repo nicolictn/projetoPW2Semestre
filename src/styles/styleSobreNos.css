@@ -1,0 +1,85 @@
+h1 {
+    color: #7700B2;
+    text-align: center;
+    font-size: 40px;
+}
+
+.sobre {
+    margin: 50px auto;
+    max-width: 90%;
+}
+
+.caixa1 {
+    width: 60%;
+    height: 500px;
+    padding: 30px;
+    font-size: 22px;
+    font-weight: bold;
+    border-radius: 10%;
+    border-top: 5px solid #391e94;
+    border-right: 5px solid #391e94;
+    border-bottom: 5px solid #391e94;
+    border-left: 5px solid #391e94;
+    float: left;
+} 
+
+.caixa3 {
+    margin: 1% auto;
+    width: 30%;
+    height: 200px;
+    padding: 20px;
+    align-items: center;
+    float: right;
+}
+
+.servicos {
+    margin: 210px auto;
+    max-width: 80%;
+}
+
+h2 {
+    color: #7700B2;
+    font-size: 30px;
+    text-align: center;
+}
+
+.caixa2 {
+    width: 25%;
+    margin: 4% 4%;
+    height: 200px;
+    border-radius: 5%;
+    color: #391e94;
+    align-items: center;
+    float: left;
+}
+
+.numeros {
+    margin: 300px auto;
+    max-width: 90%;
+}
+
+.caixa4 {
+    width: 25%;
+    height: 280px;
+    padding: 15px;
+    float: left;
+}
+
+.caixa5 {
+    margin: 30px auto;
+    width: 62%;
+    height: 500px;
+    padding: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 10%;
+    border-top: 5px solid #391e94;
+    border-right: 5px solid #391e94;
+    border-bottom: 5px solid #391e94;
+    border-left: 5px solid #391e94;
+    float: right;
+}
+
+img {
+    border-radius: 10%;
+}

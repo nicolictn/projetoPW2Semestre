@@ -6,26 +6,9 @@
     <title>Login</title>
     <link rel="stylesheet" href="/src/styles/root.css">
     <link rel="stylesheet" href="/src/styles/auth.css"><!--auth.css – Abreviação de autenticação-->
-    <script> // js para verificar o email antes de mandar para o BD
-        function validarForm() { //essa função verifica se o email é valido
-            var val = document.getElementById("valido");
-            try {
-                var y = document.forms["meuForm"]["email"].value;
-                var atpos = y.indexOf("@");
-                var dotpos = y.lastIndexOf(".");
-                if (atpos < 1 || dotpos < atpos + 2 || dotpos + 2 >= y.length) {
-                    throw "Digite um e-mail válido!";
-                }
-                return true;
-            } catch (err) {
-                val.style.color = "#FF0000";
-                val.innerHTML = "Erro: " + err;
-                return false;
-            } // fim do catch
-        } //fim da função
-    </script>
+    <!-- MEDIA QUERIES -->
+    <link rel="stylesheet" href="../styles/mediaQueries/mediaQueries_Login.css">
 </head>
-
 <body>
     <div class="container">
         <div class="login">
@@ -49,5 +32,6 @@
             <p id="valido">Preencha o formulário e clique em enviar</p>
         </div>
     </div>
+    <script src="/src/js/validation_forms_login.js"></script>
 </body>
 </html>

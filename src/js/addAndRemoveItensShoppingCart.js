@@ -79,12 +79,13 @@ function exibirCarrinho() {
 
         cartContainer.innerHTML += `
         <div class="productShoppingCart">
+            <button onclick="closeShoppingCart()" id="idCloseShoppingCart">X</button>
               <img src="${produto.imgProduto}" alt="${produto.nomeProduto}" class="product-image" id="imgProductAdicionado01">
               <div class="product-details">
               <h2 id="nameProductAdicionado01">
               ${produto.nomeProduto}
               </h2>
-              <p class="price" id="priceProductAdicionado01">
+              <p class="price" id="priceProductAdicionado01"> R$
               ${produto.valorProduto}
               </p>
               <button class="remove-from-cart" onclick="removerProdutoDoCarrinho(${index})">Remover do Carrinho</button>
@@ -104,9 +105,28 @@ function exibirCarrinho() {
     openShoppingCart();
 }
 
-function removerProduto(idProduto) {
+function removerProdutoDoCarrinho(index) {
+    // Recupera o carrinho do localStorage
+    let carrinho = JSON.parse(localStorage.getItem("carrinho")) || [];
 
+    // Verifica se o índice é válido
+    if (index >= 0 && index < carrinho.length) {
+        // Remove o item do carrinho usando o índice
+        carrinho.splice(index, 1);
+
+        // Atualiza o localStorage com o novo carrinho
+        localStorage.setItem("carrinho", JSON.stringify(carrinho));
+
+        // Exibe o carrinho atualizado
+        exibirCarrinho();
+
+        // Exibe uma mensagem de sucesso
+    //     alert("Produto removido do carrinho com sucesso!");
+    // } else {
+    //     alert("Erro ao remover o produto. Índice inválido.");
+    }
 }
+
 
     // função que irá guardar o produto no carrinho quando clicar no botão "ADICIONAR" -> PRODUTO01
     // function adicionarProdutoNoCarrinho01() {
