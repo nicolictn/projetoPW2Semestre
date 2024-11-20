@@ -49,7 +49,7 @@ main:not(.manual-btn):not(.destaque){
 .manual-navegation{
 	position: absolute;
 	/* width: 1280px; */
-	top: 790px; 
+	top: 760px; 
 	justify-content: center;
 	/* border: 1px solid red; */
 }
@@ -125,6 +125,7 @@ main:not(.manual-btn):not(.destaque){
 
 h2{
 	margin: 50px;
+	font-size: 30px;
 }
 .destaque{
 	/* border: 2px solid red;  */
@@ -143,11 +144,13 @@ h2{
 .eventos h3 {
 	font-weight: 800;
 	margin-bottom: 0;
+	font-size: 20px;
 }
 
 .eventos p{
 	width: 80%;
 	margin-top: 2px;
+	font-size: 16px;
 }
 
 .img-evento{
@@ -168,8 +171,9 @@ h2{
 
 .detalhes p{
 	/* border: 2px solid red;  */
-	margin-top: 30px;
+	margin-top: 20px;
 	margin-bottom: 63px;
+	font-size: 18px;
 }
 
 .detalhes-icones{
@@ -190,6 +194,7 @@ h2{
 .icones h3, p{
 	/* border: 2px solid red;  */
 	margin-top: 24px;
+	font-size: 18px;
 }
 
 .circulo{
@@ -198,7 +203,7 @@ h2{
 	border-radius: 50%;
 	width: 58px;
 	height: 57px;
-	top: 15%;
+	top: 14%;
 	left: 50%;
 	transform: translate(-50%, -50%); 
 	z-index: -1; 

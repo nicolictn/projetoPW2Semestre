@@ -1,0 +1,67 @@
+@media (min-width: 320px) and (max-width: 480px) {
+
+    body {
+        height: 40.25rem; /*500px*/
+        background-color: #fff;
+    }
+    
+    .container {
+        width: 100%;
+        margin-top: 2.5rem;/*200px*/
+        max-width: 100%;/*650px*/
+        padding: 4rem 2.3rem; /*30 80*/
+        border-radius: 0.62rem; /*10*/
+    }
+    
+    h1 {
+        font-size: 2.5rem;
+        margin-bottom: 2.5rem;/*40*/
+    }
+    
+    .grupo {
+        margin-top: 3.12rem;/*50*/
+        margin-bottom: 1.8rem;/*30*/
+    }
+    
+    .grupo label {
+        font-size: 1.12rem;/*18*/
+    
+    }
+    
+    .grupo input {
+        width: 100%;
+        padding: 0.8rem;/*10*/
+        border: 0.06rem solid var(--cor-secundaria);/*1*/
+        border-radius: 0.3rem;/*5*/
+        font-size: 1rem;/*16*/
+    }
+    
+    .input-espaco {
+        margin-bottom: 1.70rem;/*20*/
+    }
+    
+    .botao {
+        width: 100%;
+        padding: 0.8rem;/*10*/
+        border-radius: 0.3rem;/*5*/
+        font-size: 1.12rem;/*16*/
+        margin-top: 0.6rem;/*10*/
+        margin-bottom: 0.9rem;/*15*/
+    }
+    
+    p {
+        margin-top: 0.9rem;/*15*/
+    }
+    
+    }
+    
+    @media (min-width: 481px) and (max-width: 767px) {
+        
+    }
+    
+    @media (min-width: 768px) and (max-width: 1024px) {
+       
+    }
+    
+    @media (min-width: 1025px) and (max-width: 1280px) {
+    }
