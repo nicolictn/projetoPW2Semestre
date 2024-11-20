@@ -1,12 +1,5 @@
 /*MEDIA QUIERES*/
 @media (min-width: 320px) and (max-width: 845px) {
-    /* OBS: REALIZAR O MENU LATERAL COM JAVASCRIPT -> VÍDEO ELLEN MANDOU */
-
-body {
-    overflow-x: hidden;
-    background-color: #f5f5f5;
-}
-
 /*NAV*/
 nav {
     width: 100%;
@@ -95,20 +88,20 @@ footer {
     color: rgb(201, 201, 201);
     display: flex;
     /* justify-content: center; */
-    flex-direction: row;
+    flex-direction: column;
     padding: 28px;
     text-align: center;
     position: relative;
     bottom: 0;
     align-items: center;
     margin-top: 32px;
-    border: 1px solid green;
+    /* border: 1px solid green; */
 }
 
 footer .container_img {
     display: flex;
-    /* border: 1px solid red; */
-    width: 30%;
+    border: 1px solid red;
+    width: 50%;
 }
 
 footer img {

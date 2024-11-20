@@ -5,12 +5,13 @@ function openViewProduct() {
   
     // Exibe a div modal
     document.getElementById("ContainerDetalhesProduto").style.display = "block";
+    // exibe o "X" para fechar o modal
     document.getElementById("idCloseDetalhesProduto").style.display = "block";
   }
   
   //quando clicar no botão "X", o container vai desaparecer.
   function closeViewProduct() {
-    // Oculta a div modal
+    // Oculta a div modal -> altera seu display para none ou oculto.
     document.getElementById("ContainerDetalhesProduto").style.display = "none";
   }
   

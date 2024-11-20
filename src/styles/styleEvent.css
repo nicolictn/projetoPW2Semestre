@@ -135,10 +135,12 @@ main {
 }
 
 .div_events h3 {
+    font-size: 1.6rem;
     font-weight: 800;
 }
 
 .div_events p {
+    font-size: 1.6rem;
     margin-bottom: 32px;
 }
 
@@ -232,7 +234,7 @@ main {
 
 #contentSlide {
     overflow-x: auto;
-    overflow-y: hidden;
+    overflow-y: hidden; /*retira barra de rolagem vertical*/
     scroll-behavior: smooth;  /* USADO PARA DEIXAR A ROLAGEM MAIS SUAVE, SEM QUE ELA "SALTE" */
 }
 
