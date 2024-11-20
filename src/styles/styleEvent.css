@@ -233,9 +233,10 @@ main {
 #contentSlide {
     overflow-x: auto;
     overflow-y: hidden;
-    scroll-behavior: smooth;
+    scroll-behavior: smooth;  /* USADO PARA DEIXAR A ROLAGEM MAIS SUAVE, SEM QUE ELA "SALTE" */
 }
 
+/* WEBKIT-SCROLLBAR: PSEUDOCLASSE PARA ESTILIZAR A BARRA DE ROLAGEM. NESSE CASO, ESTÁ NULA */
 #contentSlide::-webkit-scrollbar{
     display: none;
 }
@@ -248,7 +249,7 @@ main {
 #contentSlide02 {
     overflow-x: auto;
     overflow-y: hidden;
-    scroll-behavior: smooth;
+    scroll-behavior: smooth; 
 }
 
 #contentSlide02::-webkit-scrollbar{
