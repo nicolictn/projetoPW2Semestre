@@ -1,6 +1,125 @@
 /*MEDIA QUIERES*/
 @media (min-width: 320px) and (max-width: 480px) {
-
+    /*SEARCH INPUT*/
+    .container_section_search_events {
+      /* border: 1px solid red; */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 0 auto;
+      text-align: center;
+      width: 70%;
+      margin-bottom: 88px;
+      margin-top: 10px;
+    }
+    
+    .container_section_search_events h1 {
+      font-size: 6.4rem;
+      color: var(--cor-secundaria);
+      font-weight: 700;
+    }
+    
+    .container_search_event {
+      display: inline;
+      margin: 0 auto;
+      /* border: 1px solid red; */
+    }
+    
+    .container_search_event input {
+      background-color: rgba(128, 128, 128, 0.377);
+      padding: 16px;
+      width: 400px;
+      height: 30px;
+      border: none;
+      border-radius: 8px;
+      color: black;
+    }
+    
+    .container_search_event img {
+      position: relative;
+      top: 8px;
+      left: 12px;
+      width: 25px;
+    }
+    
+    main {
+      /* margin: 20px auto; */
+      /* padding: 20px; */
+      /* text-align: center; */
+      /* border: 10px solid red; */
+    }
+    
+    h1 {
+      font-size: 28px;
+      color: #7700B2;
+      margin-bottom: 20px;
+    }
+    
+    .search-bar {
+      margin: 20px auto;
+      display: flex;
+      justify-content: center;
+      width: 400px;
+    }
+    
+    .search-bar input {
+      width: 80%;
+      padding: 10px;
+      border: 1px solid #E1E1E1;
+      border-radius: 5px;
+    }
+    
+    .search-bar button {
+      padding: 10px;
+      border: none;
+      background-color: #7700B2;
+      color: white;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      margin-top: 20px;
+    }
+    
+    .product {
+      background-color: #ffffff;
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+    
+    .product img {
+      width: 100%;
+      max-width: 150px;
+      border-radius: 5px;
+      margin-bottom: 10px;
+    }
+    
+    .product h2 {
+      font-size: 16px;
+      margin: 10px 0;
+    }
+    
+    .product p {
+      font-size: 16px;
+      color: #7700B2;
+      margin-bottom: 10px;
+    }
+    
+    .product button {
+      padding: 10px;
+      background-color: #7700B2;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+   
 }
 
 @media (min-width: 481px) and (max-width: 767px) {

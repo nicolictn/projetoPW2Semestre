@@ -1,6 +1,9 @@
+// utiliza a variável "E" como parâmetro
 function direcao(e){
+    //armazena na variável "direcao" do slide 01
     var direcao = document.getElementById("contentSlide");
 
+    //caso 
     if(e == 1) {
         //esquerda
 
@@ -13,6 +16,7 @@ function direcao(e){
     }
 }
 
+// utiliza a variável "F" como parâmetro
 function direcao02(f){
     var direcao02 = document.getElementById("contentSlide02");
 
