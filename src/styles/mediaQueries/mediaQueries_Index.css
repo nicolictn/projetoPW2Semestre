@@ -1,15 +1,721 @@
 /*MEDIA QUIERES*/
 @media (min-width: 320px) and (max-width: 480px) {
 
-}
-
-@media (min-width: 481px) and (max-width: 767px) {
     
-}
-
-@media (min-width: 768px) and (max-width: 1024px) {
-   
-}
-
-@media (min-width: 1025px) and (max-width: 1280px) {
-}
+    *{
+        font-family: var(--font-padrao);
+    }
+    
+    
+    main:not(.manual-btn):not(.destaque){
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 20%;/*estava 100vh.espaço em branco do slide*/
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .slider{
+        margin: 0 auto;
+        margin-bottom: 0.62rem;/*10*/
+        width: 95%; 
+        height:100%; /*600*/
+        overflow: hidden; 
+        position: relative; 
+        border-radius: 1.5rem;/*25*/
+        margin-top: 0.6rem;/*10*/
+        /* border: 1px solid red; */
+    }
+    
+    .slides{
+        width: 400%;/*400*/
+        height: 20rem;/*400*/
+        display: flex; 
+    }
+    
+    
+    .manual-navegation{
+        position: absolute;
+        /* width: 1280px; */
+        top: 32rem; /*790*/ /*botaozin subiuuuuuuu*/
+        justify-content: center;
+        /* border: 0.06rem solid red; */
+    }
+    
+    /* .manual-navegation label {
+        height: 2px;
+    } */
+    
+    .manual-btn{
+        border: 0.1rem solid #ffffff;/*2*/
+        /* border: 2px solid #00ff73; */
+        /* height: 2px; */
+        padding: 0 0.3rem;/*5*/
+        border-radius: 0.6rem;/*10*/
+    
+    }
+    
+    .manual-btn:not(:last-child){ 
+        margin-right: 2.5rem;/*40*/
+        
+    }
+    
+    
+    .navegation-auto div{
+        /* border: 0.1rem solid red; */
+        /* border: 2px solid #00ff73; */
+        padding: 0.3rem;/*5*/
+        border-radius: 0.6rem;/*10*/
+    
+    }
+    
+    .navegation-auto {
+        z-index: 0;
+        position: absolute;
+        width: 100%;
+        top: 35.6rem;/*570*/
+        display: flex;
+        justify-content: center;
+        z-index: -1;
+        /* border: 1px solid red; */
+    }
+    
+    .navegation-auto div:not(:last-child){ 
+        margin-right: 2.5rem;/*40*/
+    }
+    
+    h2{
+        margin: 3.1rem;/*50*/
+        font-size: 3rem;
+    }
+    .destaque{
+        /* border: 2px solid red;  */
+        margin: 3.1rem;/*50*/
+        display: flex;
+        flex-direction: column;/*add*/
+        align-items: center;
+        /* justify-content: center; */
+    }
+    
+    .eventos{
+        /* border: 2px solid red;  */
+        display: flex;
+        flex-direction: column; 
+        /* justify-content: space-between; */
+        /* text-align:left; */
+        align-items: center;
+    }
+    
+    .eventos h3 {
+        font-weight: 800;
+        margin-bottom: 0;
+        font-size: 2.5rem;/*add*/
+    }
+    
+    .eventos p{
+        width: 80%;
+        margin-top: 0.12rem;/*2*/
+        margin-bottom: 2rem;/*add*/
+        font-size: 1.5rem;/*add*/
+        
+    }
+    
+    .img-evento{
+        text-align: center;
+        width: 32.8rem;/*346*//*35,8*/
+        height: 18.5rem;/*229*/
+        border-radius: 1.7rem;/*28*/
+        margin-bottom: 1.5rem;/*24*/
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .detalhes{
+        /* border: 2px solid red;  */
+        margin-top: 7rem;/*112*/
+        display: block;
+        text-align: center;
+        line-height: 0.6rem;/*10*/
+        margin-bottom: 3.9rem;/*63*/
+    }
+    
+    .detalhes p{
+        /* border: 2px solid red;  */
+        margin-top: 1.8rem;/*30*/
+        margin-bottom: 3.9rem;/*63*/
+        font-size: 1.5rem;/*add*/
+    }
+    
+    
+    .icones{
+        position: relative;
+        /* border: 2px solid blueviolet;  */
+        display: block;
+        text-align: center;
+        width: 30%;
+        top: 20%;
+    }
+    
+    .icones h3, p{
+        /* border: 2px solid red;  */
+        margin-top: 1.5rem;/*24*/
+        font-size: 1.1rem;
+    
+    }
+    
+    .circulo{
+        border-radius: 50%;
+        width: 4.6rem;/*58*/
+        height: 4.5rem;/*57*/
+        top: 13%;
+        left: 50%;
+        /* margin-bottom: 16px; */
+    }
+    
+    .icone{
+        position: relative;
+        z-index: 1;
+        width: 3rem;
+        height: 2.3rem;
+    
+    }
+    
+    }
+    
+    @media (min-width: 481px) and (max-width: 767px) {
+        
+        
+    *{
+        font-family: var(--font-padrao);
+    }
+    
+    
+    main:not(.manual-btn):not(.destaque){
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 20%;/*estava 100vh.espaço em branco do slide*/
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .slider{
+        margin: 0 auto;
+        margin-bottom: 0.62rem;/*10*/
+        width: 95%; 
+        height:100%; /*600*/
+        overflow: hidden; 
+        position: relative; 
+        border-radius: 1.5rem;/*25*/
+        margin-top: 0.6rem;/*10*/
+        /* border: 1px solid red; */
+    }
+    
+    .slides{
+        width: 400%;/*400*/
+        height: 20rem;/*400*/
+        display: flex; 
+    }
+    
+    
+    .manual-navegation{
+        position: absolute;
+        /* width: 1280px; */
+        top: 32rem; /*790*/ /*botaozin subiuuuuuuu*/
+        justify-content: center;
+        /* border: 0.06rem solid red; */
+    }
+    
+    /* .manual-navegation label {
+        height: 2px;
+    } */
+    
+    .manual-btn{
+        border: 0.1rem solid #ffffff;/*2*/
+        /* border: 2px solid #00ff73; */
+        /* height: 2px; */
+        padding: 0 0.3rem;/*5*/
+        border-radius: 0.6rem;/*10*/
+    
+    }
+    
+    .manual-btn:not(:last-child){ 
+        margin-right: 2.5rem;/*40*/
+        
+    }
+    
+    
+    .navegation-auto div{
+        /* border: 0.1rem solid red; */
+        /* border: 2px solid #00ff73; */
+        padding: 0.3rem;/*5*/
+        border-radius: 0.6rem;/*10*/
+    
+    }
+    
+    .navegation-auto {
+        z-index: 0;
+        position: absolute;
+        width: 100%;
+        top: 35.6rem;/*570*/
+        display: flex;
+        justify-content: center;
+        z-index: -1;
+        /* border: 1px solid red; */
+    }
+    
+    .navegation-auto div:not(:last-child){ 
+        margin-right: 2.5rem;/*40*/
+    }
+    
+    h2{
+        margin: 3.1rem;/*50*/
+        font-size: 3rem;
+    }
+    .destaque{
+        /* border: 2px solid red;  */
+        margin: 3.1rem;/*50*/
+        display: flex;
+        flex-direction: column;/*add*/
+        align-items: center;
+        /* justify-content: center; */
+    }
+    
+    .eventos{
+        /* border: 2px solid red;  */
+        display: flex;
+        flex-direction: column; 
+        /* justify-content: space-between; */
+        /* text-align:left; */
+        align-items: center;
+    }
+    
+    .eventos h3 {
+        font-weight: 800;
+        margin-bottom: 0;
+        font-size: 2.5rem;/*add*/
+    }
+    
+    .eventos p{
+        width: 80%;
+        margin-top: 0.12rem;/*2*/
+        margin-bottom: 2rem;/*add*/
+        font-size: 1.5rem;/*add*/
+        
+    }
+    
+    .img-evento{
+        text-align: center;
+        width: 33.8rem;/*346*//*35,8*/
+        height: 20.5rem;/*229*/
+        border-radius: 1.7rem;/*28*/
+        margin-bottom: 1.5rem;/*24*/
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .detalhes{
+        /* border: 2px solid red;  */
+        margin-top: 7rem;/*112*/
+        display: block;
+        text-align: center;
+        line-height: 0.6rem;/*10*/
+        margin-bottom: 3.9rem;/*63*/
+    }
+    
+    .detalhes p{
+        /* border: 2px solid red;  */
+        margin-top: 1.8rem;/*30*/
+        margin-bottom: 3.9rem;/*63*/
+        font-size: 1.5rem;/*add*/
+    }
+    
+    
+    .icones{
+        position: relative;
+        /* border: 2px solid blueviolet;  */
+        display: block;
+        text-align: center;
+        width: 30%;
+        top: 20%;
+    }
+    
+    .icones h3, p{
+        /* border: 2px solid red;  */
+        margin-top: 1.1rem;/*24*/
+        font-size: 1.1rem;
+    
+    }
+    
+    .circulo{
+        border-radius: 50%;
+        width: 4.6rem;/*58*/
+        height: 4.5rem;/*57*/
+        top: 16%;
+        left: 50%;
+        /* margin-bottom: 16px; */
+    }
+    
+    .icone{
+        position: relative;
+        z-index: 1;
+        width: 3rem;
+        height: 2.8rem;
+    
+    }
+    
+        
+    }
+    
+    @media (min-width: 768px) and (max-width: 1024px) {
+        *{
+            font-family: var(--font-padrao);
+        }
+        
+        
+        main:not(.manual-btn):not(.destaque){
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+        }
+        
+        .slider{
+            margin: 0 auto;
+            margin-bottom: 0.6rem;
+            width: 95%; 
+            height: 40.5rem; 
+            border-radius: 1.5rem;
+            margin-top: 0.6rem;
+            /* border: 1px solid red; */
+        }
+        
+        .slides{
+            width: 400%;
+            height: 25rem;
+            display: flex; 
+        }
+        
+        
+        .manual-navegation{
+            position: absolute;
+            /* width: 1280px; */
+            top: 52rem;
+            justify-content: center;
+            /* border: 1px solid red; */
+        }
+        
+        /* .manual-navegation label {
+            height: 2px;
+        } */
+        
+        .manual-btn{
+            border: 0.1rem solid #ffffff;
+            /* border: 2px solid #00ff73; */
+            /* height: 2px; */
+            padding: 0.5rem;
+            border-radius: 0.6rem;
+        
+        }
+        
+        .manual-btn:not(:last-child){ 
+            margin-right: 2.5rem;
+            
+        }
+        
+        
+        .navegation-auto div{
+            border: 0.1rem solid #ffffff;
+            /* border: 2px solid #00ff73; */
+            padding: 0.3rem;
+            border-radius: 0.6rem;
+        
+        }
+        
+        .navegation-auto {
+            z-index: 0;
+            position: absolute;
+            width: 100%;
+            top: 30.6rem;
+            display: flex;
+            justify-content: center;
+            z-index: -1;
+            /* border: 1px solid red; */
+        }
+        
+        .navegation-auto div:not(:last-child){ 
+            margin-right: 2.5rem;
+        }
+        
+        h2{
+            margin: 3.1rem;
+            font-size: 3.5rem;
+        }
+        .destaque{
+            /* border: 2px solid red;  */
+            margin: 2.5rem;
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .eventos{
+            /* border: 2px solid red;  */
+            display: block; 
+            justify-content: space-between;
+            text-align:left;
+        }
+        
+        .eventos h3 {
+            font-weight: 800;
+            margin-bottom: 0;
+            font-size: 3rem;
+        }
+        
+        .eventos p{
+            width: 80%;
+            margin-top: 0.1rem;
+            font-size: 2rem;
+        }
+        
+        .img-evento{
+            width: 25.6rem;
+            height: 20.3rem;
+            border-radius: 2.7rem;
+            margin-bottom: 1.5rem;
+            margin-right: 2rem;
+        }
+        
+        .detalhes{
+            /* border: 2px solid red;  */
+            margin-top: 8rem;
+            display: block;
+            text-align: center;
+            line-height: 0.6rem;
+            margin-bottom: 4.9rem;
+        }
+        
+        .detalhes p{
+            /* border: 2px solid red;  */
+            margin-top: 1.8rem;
+            margin-bottom: 3.9rem;
+            font-size: 2rem;/*add*/
+        }
+        
+        .detalhes h1{
+            font-size: 2.7rem;
+            margin-bottom: 1.8rem;
+        }
+        
+        .icones{
+            position: relative;
+            /* border: 2px solid red;  */
+            display: block;
+            text-align: center;
+            width: 30%;
+            top: 30%;
+        }
+        
+        .icones h3, p{
+            /* border: 2px solid red;  */
+            margin-top: 3rem;
+            font-size: 2rem;
+        }
+        
+        .circulo{
+            position: absolute;
+            background: #d9d9d9;
+            border-radius: 50%;
+            width: 7.6rem;/*58*/
+            height: 7.5rem;/*57*/
+            top: 15%;
+            left: 50%;
+            /* margin-bottom: 16px; */
+        }
+        
+        .icone{
+            position: relative;
+            z-index: 1;
+            width: 4.5rem;
+            height: 4.3rem;
+        }
+       
+    }
+    
+    @media (min-width: 1025px) and (max-width: 1280px) {
+        
+    *{
+        font-family: var(--font-padrao);
+    }
+    
+    
+    main:not(.manual-btn):not(.destaque){
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+    }
+    
+    .slider{
+        margin: 0 auto;
+        margin-bottom: 0.6rem;
+        width: 95%; 
+        height: 60.5rem; 
+        border-radius: 1.5rem;
+        margin-top: 0.6rem;
+        /* border: 1px solid red; */
+    }
+    
+    .slides{
+        width: 400%;
+        height: 25rem;
+        display: flex; 
+    }
+    
+    
+    .manual-navegation{
+        position: absolute;
+        /* width: 1280px; */
+        top: 72rem;
+        justify-content: center;
+        /* border: 1px solid red; */
+    }
+    
+    /* .manual-navegation label {
+        height: 2px;
+    } */
+    
+    .manual-btn{
+        border: 0.1rem solid #ffffff;
+        /* border: 2px solid #00ff73; */
+        /* height: 2px; */
+        padding: 0.5rem;
+        border-radius: 0.6rem;
+    
+    }
+    
+    .manual-btn:not(:last-child){ 
+        margin-right: 2.5rem;
+        
+    }
+    
+    
+    .navegation-auto div{
+        border: 0.1rem solid #ffffff;
+        /* border: 2px solid #00ff73; */
+        padding: 0.3rem;
+        border-radius: 0.6rem;
+    
+    }
+    
+    .navegation-auto {
+        z-index: 0;
+        position: absolute;
+        width: 100%;
+        top: 35.6rem;
+        display: flex;
+        justify-content: center;
+        z-index: -1;
+        /* border: 1px solid red; */
+    }
+    
+    .navegation-auto div:not(:last-child){ 
+        margin-right: 2.5rem;
+    }
+    
+    h2{
+        margin: 3.1rem;
+        font-size: 3.5rem;
+    }
+    .destaque{
+        /* border: 2px solid red;  */
+        margin: 4rem;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .eventos{
+        /* border: 2px solid red;  */
+        display: block; 
+        justify-content: space-between;
+        text-align:left;
+    }
+    
+    .eventos h3 {
+        font-weight: 800;
+        margin-bottom: 0;
+        font-size: 3rem;
+    }
+    
+    .eventos p{
+        width: 80%;
+        margin-top: 0.1rem;
+        font-size: 2.5rem;
+    }
+    
+    .img-evento{
+        width: 35.6rem;
+        height: 24.3rem;
+        border-radius: 2.7rem;
+        margin-bottom: 1.5rem;
+        margin-right: 9rem;
+    }
+    
+    .detalhes{
+        /* border: 2px solid red;  */
+        margin-top: 8rem;
+        display: block;
+        text-align: center;
+        line-height: 0.6rem;
+        margin-bottom: 4.9rem;
+    }
+    
+    .detalhes p{
+        /* border: 2px solid red;  */
+        margin-top: 1.8rem;
+        margin-bottom: 3.9rem;
+        font-size: 2.5rem;/*add*/
+    }
+    
+    .detalhes h1{
+        font-size: 2.7rem;
+        margin-bottom: 2rem;
+    }
+    
+    .icones{
+        position: relative;
+        /* border: 2px solid red;  */
+        display: block;
+        text-align: center;
+        width: 30%;
+        top: 30%;
+    }
+    
+    .icones h3, p{
+        /* border: 2px solid red;  */
+        margin-top: 3rem;
+        font-size: 2.3rem;
+    }
+    
+    .circulo{
+        border-radius: 50%;
+        width: 7.6rem;/*58*/
+        height: 7.5rem;/*57*/
+        top: 15%;
+        left: 50%;
+        /* margin-bottom: 16px; */
+    }
+    
+    .icone{
+        position: relative;
+        z-index: 1;
+        width: 4.5rem;
+        height: 4.3rem;
+    }
+    }
