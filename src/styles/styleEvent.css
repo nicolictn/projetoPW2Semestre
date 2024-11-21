@@ -160,7 +160,7 @@ main {
 #btn-left {
     position: absolute;
     display: flex;
-    top: 56.0rem;
+    top: 78.0rem;
     left: 7.2rem;
     height: 8.0rem;
     width: 50px;
@@ -179,7 +179,7 @@ main {
 #btn-right {
     position: absolute;
     display: flex;
-    top: 56.0rem;
+    top: 78.0rem;
     right: 7.2rem;
     height: 8.0rem;
     width: 50px;
@@ -197,7 +197,7 @@ main {
 #btn-left02 {
     position: absolute;
     display: flex;
-    top: 120.0rem;
+    top: 140.0rem;
     left: 7.2rem;
     height: 8.0rem;
     width: 50px;
@@ -216,7 +216,7 @@ main {
 #btn-right02 {
     position: absolute;
     display: flex;
-    top: 120.0rem;
+    top: 140.0rem;
     right: 7.2rem;
     height: 8.0rem;
     width: 50px;
