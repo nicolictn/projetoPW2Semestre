@@ -1,31 +1,20 @@
-<!-- 
 # PREMIUM TICKETS - A sua plataforma de ingressos!
+
+<img src="/img_readme/01.png">
+<img src="/img_readme/02.png">
+<img src="/img_readme/03.png">
 
 ## Informações
 
-Design e código construídos em grupo com caráter educacional para aplicar habilidades de programação web da disciplina Programação Web do curso de graduação em Análise e Desenvolvimento de Sistemas - CAS (2º Semestre, 2024), orientada pelo docente [nome do professor]. Foram utilizados: HTML, CSS, JavaScript, Figma.
+Design e código construídos em grupo com caráter educacional para aplicar habilidades de programação web da disciplina Programação Web do curso de graduação em Análise e Desenvolvimento de Sistemas - CAS (2º Semestre, 2024), orientada pelo docente Henrique Pastor. Foram utilizados: HTML, CSS, JavaScript para a construção da plataforma e Figma para criação do protótipo.
+
+
 ## Funcionalidades
 
-- Validação em JavaScript do formulário de login e de cadastro;
-- Carrossel de imagens no HOME e no EVENTOS;
-- Utilização de LocalStorage para a ferramenta do Shopping Cart (Carrinho de Compras);
-- Adição e remoção de produtos no Shopping Cart.
-
-
-## Aprendizados
-
-O que você aprendeu construindo esse projeto? Quais desafios você enfrentou e como você superou-os?
-
-
-![Logo](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/th5xamgrr6se0x5ro4g6.png)
-
-## Documentação de cores
-
-| Cor               | Hexadecimal                                                |
-| ----------------- | ---------------------------------------------------------------- |
-| Cor exemplo       | ![#0a192f](https://via.placeholder.com/10/0a192f?text=+) #0a192f |
-| Cor exemplo       | ![#f8f8f8](https://via.placeholder.com/10/f8f8f8?text=+) #f8f8f8 |
-| Cor exemplo       | ![#00b48a](https://via.placeholder.com/10/00b48a?text=+) #00b48a |
-| Cor exemplo       | ![#00d1a0](https://via.placeholder.com/10/00b48a?text=+) #00d1a0 | -->
-
-
+- Responsividade para diferentes dispositivos.
+- Validação de Formulários de Login e Cadastro.
+- Carrinho de compras utilizando LocalStorage.
+- Containers para exibir detalhes dos produtos.
+- Carrosséis dinâmicos na Home e na página de Eventos.
+- Aplicação de Flexbox e Grid para estruturação.
+- Aplicação de função JavaScript para abertura de página de detalhes do produto.
